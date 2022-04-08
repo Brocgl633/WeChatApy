@@ -1,0 +1,24 @@
+package com.cao.paymentdemo.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter // type为final，只能getter
+public enum PayType {
+    /**
+     * 微信
+     */
+    WXPAY("微信"),
+
+
+    /**
+     * 支付宝
+     */
+    ALIPAY("支付宝");
+
+    /**
+     * 类型
+     */
+    private final String type;
+}
